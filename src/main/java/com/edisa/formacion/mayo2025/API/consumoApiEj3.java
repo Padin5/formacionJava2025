@@ -13,9 +13,11 @@ import java.util.Map;
 public class consumoApiEj3 {
 
 
-            public static void main(String[] args) {
+    private static final String ECB_URL = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml";
 
-                final String ECB_URL = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml";
+    public static void main(String[] args) {
+
+
                 if (args.length < 2 || args.length > 3) {
                     System.out.println("Uso: java ConversorDivisas <divisa_origen> <divisa_destino> [cantidad]");
                     System.out.println("Ejemplo: java ConversorDivisas USD JPY 100");
